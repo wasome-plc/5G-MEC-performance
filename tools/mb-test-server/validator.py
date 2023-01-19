@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+# Copyright 2022 Beijing WanSheng (WaSome) Intelligence Technology Incorporated. All rights reserved. 
 # -*- coding: utf-8 -*-
 import sys
 import time

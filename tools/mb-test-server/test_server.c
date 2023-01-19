@@ -1,8 +1,4 @@
-/*
- * Copyright © 2008-2014 Stéphane Raimbault <stephane.raimbault@gmail.com>
- *
- * SPDX-License-Identifier: BSD-3-Clause
- */
+/* Copyright 2022 Beijing WanSheng (WaSome) Intelligence Technology Incorporated. All rights reserved. */
 
 #define LOG_TAG "test"
 
