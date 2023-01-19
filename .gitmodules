@@ -1,0 +1,6 @@
+[submodule "deps/libmodbus"]
+	path = deps/libmodbus
+	url = https://github.com/stephane/libmodbus.git
+[submodule "deps/iagent-sdk"]
+	path = deps/iagent-sdk
+	url = https://gitee.com/idrm/iagent-sdk.git
