@@ -1,0 +1,9 @@
+{
+    "name": "single-point",
+    "version": "0.0.1",
+    "description": "一个点位的测试",
+    "category": "application",
+    "template": "",
+    "vsc": true,
+    "lastOpenTime": 1674101317815
+}

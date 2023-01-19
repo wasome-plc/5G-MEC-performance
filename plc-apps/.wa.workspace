@@ -1,0 +1,9 @@
+{
+    "targets": [
+        {
+            "host": "127.0.0.1",
+            "isOnline": false,
+            "isDefault": true
+        }
+    ]
+}

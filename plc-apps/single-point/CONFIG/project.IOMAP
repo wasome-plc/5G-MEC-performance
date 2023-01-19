@@ -1,0 +1,14 @@
+{
+    "network": {
+        "modbus_bus_num": 1,
+        "modbus_slaves": [
+            {
+                "bus_idx": null,
+                "slave_ID": 1,
+                "desc": "测试从站",
+                "input_map": [],
+                "output_map": []
+            }
+        ]
+    }
+}
