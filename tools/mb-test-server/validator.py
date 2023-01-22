@@ -55,7 +55,7 @@ if __name__ == "__main__":
         
     except modbus_tk.modbus.ModbusError as exc:
         logger.error("%s- Code=%d", exc, exc.get_exception_code())
-        SystemExit("connect fail")
+        sys.exit("connect fail")
 
     logger.info("connected")
 
@@ -68,6 +68,7 @@ if __name__ == "__main__":
             logger.error("%s- Code=%d", exc, exc.get_exception_code())
         except Exception as exc:
             logger.error("Except:%s", exc)
+            break
         # time.sleep(0.1)
         if args.step:
             print(f'recieved data: {result}')
