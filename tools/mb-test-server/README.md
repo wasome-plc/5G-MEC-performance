@@ -1,5 +1,7 @@
 
-# 基本方案
+# 基本测试原理
+
+在开始5G环境下端对端测试之前，建议validator.py脚本完成基本验证测试。测试流程如下：
 
 ![](./mb_test_workflow.png)
 
@@ -20,12 +22,45 @@
 ![](./mb_test_workflow2.png)
 
 
+
+
 # 使用方法
+## 编译测试modbus-test-server
+
+准备安装编译工具链和三方库：
+```
+sudo apt update
+sudo apt install build-essential
+sudo apt install cmake
+
+pip install modbus_tk
+```
+
+下载代码仓库和依赖的三方代码：
+```
+git clone https://github.com/wasome-plc/5G-MEC-performance.git
+cd 5G-MEC-performance
+git submodule init
+git submodule update
+cd  deps/iagent-sdk/external
+./download.sh
+```
+
+编译：
+```
+cd {项目目录}
+cd tools/mb-test-server
+mkdir build
+cd build
+cmake ..
+make
+```
+
 ## 启动测试程序
 ```
 Modbus client to measure data bandwith
 Usage:
-  ./modbus_test_server -c [coil test data size] -r [register test data size]
+  ./modbus_test_server -c [coil test data size] -r [register test data size] -p [port]
 ```
 如下所示：
 ```
