@@ -25,15 +25,23 @@
 
 
 # 使用方法
+## validator.py
+准备安装validator.py所依赖的三方库：
+```
+pip install modbus_tk
+```
+
 ## 编译测试modbus-test-server
 
-准备安装编译工具链和三方库：
+本代码仓库提供了modbus-test-server的可执行二进制文件，位于[bin](../../bin)目录下。  
+
+
+如果希望从源码完成编译，准备安装编译工具链和三方库：
 ```
 sudo apt update
 sudo apt install build-essential
 sudo apt install cmake
 
-pip install modbus_tk
 ```
 
 下载代码仓库和依赖的三方代码：

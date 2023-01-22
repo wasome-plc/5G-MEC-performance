@@ -163,8 +163,8 @@ int main(int argc, char *argv[])
     tick_time_t last_set_us = 0;
     tick_time_t last_coil_set_us = 0;
     snprintf(path, sizeof(path), "%s/mb_test_stats.log", get_bin_path());
-    duration_counter_t counter_c = ws_create_duration_counter(DEFAULT_DURATION_MGR, "coil_cycle", 1000);
-    duration_counter_t counter_r = ws_create_duration_counter(DEFAULT_DURATION_MGR, "reg_cycle", 1000);
+    duration_counter_t counter_c = ws_create_duration_counter(DEFAULT_DURATION_MGR, "coil_cycle (us)", 1000);
+    duration_counter_t counter_r = ws_create_duration_counter(DEFAULT_DURATION_MGR, "reg_cycle (us)", 1000);
     ws_start_duration_report(DEFAULT_DURATION_MGR, stats_duration, path);
 
     fd_set refset;
